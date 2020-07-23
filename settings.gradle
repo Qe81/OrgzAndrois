@@ -1,0 +1,2 @@
+rootProject.name='OrgzAndrois'
+include ':app'

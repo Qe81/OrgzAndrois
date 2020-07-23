@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.AddEvent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="5pt"
+            android:layout_height="5pt" />
+
+        <Button
+            android:id="@+id/Close"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/close"
+            android:gravity="left|center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/NameBar1"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/add_event"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Tick"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/tick"
+            android:gravity="right|center"
+            android:text=""
+            android:onClick="AddRecordTick"/>
+
+        <Space
+            android:layout_width="5pt"
+            android:layout_height="5pt" />
+
+    </LinearLayout>
+    <View android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#CFC8C8" />
+    <View android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/NameEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Название события"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/StartTime"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Начало"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/DataTimeStart"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="DataTimeStart"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Окончание"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/DataTimeEnd"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="DataTimeEnd"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+
+</LinearLayout>

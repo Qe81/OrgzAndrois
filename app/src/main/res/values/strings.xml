@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Органайзер</string>
+    <string name="action_today">Сьогодні</string>
+    <string name="action_day_view">1 день</string>
+    <string name="action_three_day_view">3 дня</string>
+    <string name="action_week_view">Неділя</string>
+    <string name="title_activity_basic">Органайзер</string>
+    <string name="title_activity_asynchronous">Asynchronous Events</string>
+    <string name="async_error">Could not download events from the internet</string>
+    <string name="add_event">Додавання події</string>
+</resources>
